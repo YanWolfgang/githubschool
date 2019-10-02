@@ -1,0 +1,61 @@
+html {
+    box-sizing:border-box;
+  
+  *before *after 
+    box-sizing: inherit;
+  }
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 0.4fr 2.1fr 2.3fr 0.4fr 0.2fr 0.6fr;
+      grid-template-areas: "header header header header header header header header header header header" "menu menu menu menu menu menu menu menu menu menu menu" "Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion" "Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion Contruccion" ". . . . . . . . . . ." ". . . . . . . . . . ." "footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+  h1{
+    font-size: 50px;
+  }
+
+  header{
+    grid-area: header;
+    background-color: blueviolet;
+  
+  }
+
+ a:active{
+   color: antiquewhite;
+ }
+  nav ul{
+    grid-area: menu;
+    grid-row: center;
+    background-color: brown; 
+    
+    font-size: 30px;
+
+  }
+  li a {
+    grid-area: menu;
+    color: black;
+    grid-row: center;
+    text-decoration-color: black;
+   transition:color 0.3s ease;
+  }
+  
+  main{
+    grid-area: Construccion;
+     background-size: cover;
+     height: 100vh;
+    background-image: url("../Images/fondo1.png");
+    background-repeat: no-repeat;
+    background-position: center
+    
+  }
+  footer{
+    grid-area: footer;
+    background-color: aqua;
+  }
+
+
+
+
+  

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4, svg y vivus.</title>
+    <style>
+    svg{
+        height: 80vh;
+    }
+    button {
+    margin: 0;
+    padding: 3px 6px;
+    border-radius: 6px;
+    border: 1px solid currentColor;
+    color: inherit;
+    background-color: rgba(0,0,0,0);
+    font-size: 0.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+button:hover{
+    background-color: rgb(245, 229, 6);
+}
+        </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+                <svg id="ian"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1365.14 932.43"
+                onclick="myVivus.reset().play();"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:7px;}</style></defs><title>ian</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M12.09,185.47s90-132,287-76-185,102-89-45,283,6,215,101-489,374-341,668,141-199-40-49,292,112,462-150,318,155,114,162-121-300,54-292-127,52,4-33-161,363,77,313,117-313,92-312-22,93,63,25-17,253,95,293,121-134,55-142,58,230,302-204"/></g></g></svg>
+            
+            <script type="text/javascript" src="js/vivus.js"></script>
+            <span class="boton">
+                <button onclick="myVivus.reset().play();">REPLAY</button>
+            </span>
+            
+            <script>
+                </script>
+        <script>
+      const myVivus = new Vivus('ian',{duration:150,type: 'oneByOne', });
+
+        </script>
+        
+        </section>
+        
+        
+    
+
+    </div>
+
+    
+</body>
+</html>

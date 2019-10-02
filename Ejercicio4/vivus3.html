@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4-3, svg y vivus.</title>
+    <style>
+    #ian {
+        height: 80vh;
+    }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+               <div id="ian"> 
+                   <span class= "botones">
+                       <button onclick="timingTest(this, 'type', 'delayed';)"
+                       class="active"
+                   ><span>Deleyed</span>
+                </button>
+                </span>
+               </div>
+        <script type="text/javascript" src ="js/vivus.js"></script>
+        <script>
+            new Vivus ('ian',{duration:150, type:'oneByOne',file:'imagenes/SVG/ian.svg'});
+        </script>
+      
+
+        </script>
+        </section>
+        
+    
+
+    </div>
+
+    
+</body>
+</html>
